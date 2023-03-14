@@ -1,0 +1,104 @@
+! Adams View Adams 2020 (built Feb 25 2020)
+! Graphics:  OpenGL
+! Enter a command, '?', or 'help'.
+model display model=.Brazo_Final view=all
+! >> model display model=.Brazo_Final view=all
+! VERIFY MODEL: .Brazo_Final
+! 
+!  -15 Gruebler Count (approximate degrees of freedom)
+!   49 Moving Parts (not including ground)
+!    8 Revolute Joints
+!    1 Translational Joints
+!   44 Fixed Joints
+! 
+!    3 Degrees of Freedom for .Brazo_Final
+! 
+! There are 18 redundant constraint equations.
+! 
+!    This constraint:                                                 unnecessarily removes this DOF:
+! 
+!    .Brazo_Final.JOINT_39                         (Revolute Joint)   Rotation Between Zi & Yj
+!    .Brazo_Final.Articulacion_1.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Xg
+!    .Brazo_Final.Articulacion_1.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Yg
+!    .Brazo_Final.Articulacion_1.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Zg
+!    .Brazo_Final.Articulacion_1.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Xj
+!    .Brazo_Final.Articulacion_1.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Yj
+!    .Brazo_Final.Articulacion_2.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Xg
+!    .Brazo_Final.Articulacion_2.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Yg
+!    .Brazo_Final.Articulacion_2.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Zg
+!    .Brazo_Final.Articulacion_2.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Xj
+!    .Brazo_Final.Articulacion_2.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Yj
+!    .Brazo_Final.Articulacion_3.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Xg
+!    .Brazo_Final.Articulacion_3.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Yg
+!    .Brazo_Final.Articulacion_3.joi_rotor_stator  (Revolute Joint)   Translation of I Marker Along Zg
+!    .Brazo_Final.Articulacion_3.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Xj
+!    .Brazo_Final.Articulacion_3.joi_rotor_stator  (Revolute Joint)   Rotation Between Zi & Yj
+!    .Brazo_Final.JOINT_43                         (Fixed Joint)      Rotation Between Zi & Xj
+!    .Brazo_Final.JOINT_43                         (Fixed Joint)      Rotation Between Xi & Yj
+! 
+! 
+! Model verified successfully
+! ERROR:  PINPUT/0 is not defined in the data set. Command ignored.
+! WARNING:  Integrator HMAX could not be determined. Setting to HINIT.
+view manage orient view=right up_axis=(.MDI.up_axis) forward_axis=(.MDI.forward_axis)
+if cond = (eval( db_default(.System_Defaults, "view").render) == 1)
+   view man mod render=sshaded
+else
+   view man mod render=wireframe
+end !if on render
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!  SELECT OBJECT
+undo begin
+default coordinate_system default_coordinate_system=.Brazo_Final
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Zoom
+undo begin
+view zoom view=.gui.main.front zoom=2.660899654
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Translate
+undo begin
+view center view=.gui.main.front object=172.5, 151.2943398816, 271.4721338912
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Zoom
+undo begin
+view zoom view=.gui.main.front zoom=2.107266436
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Translate
+undo begin
+view center view=.gui.main.front object=172.5, 137.2451597142, 287.701359257
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Zoom
+undo begin
+view zoom view=.gui.main.front zoom=0.1807379612
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Translate
+undo begin
+view center view=.gui.main.front object=172.5, 272.6066051369, 252.8558386531
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
