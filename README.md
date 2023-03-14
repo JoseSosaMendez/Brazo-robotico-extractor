@@ -15,3 +15,7 @@ Hacen falta los archivos .bin, .biq y .res, estos pueden ser encontrados en:
 https://drive.google.com/drive/folders/1HrYbSJRAV1Cu_4bJA9vlHfAMiJDVOPOd?usp=sharing
 
 Estos archivos se deben agregar en la carpeta "Modelo Adams"
+
+# Cualquier duda o información
+
+ENviar un correo a jose.sosa.mdz@gmail.com
