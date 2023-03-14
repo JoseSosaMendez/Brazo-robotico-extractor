@@ -18,4 +18,4 @@ Estos archivos se deben agregar en la carpeta "Modelo Adams"
 
 # Cualquier duda o información
 
-ENviar un correo a jose.sosa.mdz@gmail.com
+Enviar un correo a jose.sosa.mdz@gmail.com
